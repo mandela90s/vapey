@@ -1,0 +1,61 @@
+:root {
+    --primary-green: #2d5a27;
+    --secondary-green: #4a7c3a;
+    --accent-gold: #d4af37;
+}
+
+.brand-header {
+    background: var(--primary-green);
+    border-bottom: 3px solid var(--accent-gold);
+}
+
+.brand-logo {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    color: white !important;
+    font-size: 1.5rem;
+}
+
+.leaf-logo {
+    color: var(--accent-gold);
+    font-size: 2.5rem;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(45,90,39,0.8), rgba(45,90,39,0.8)),
+                url('https://images.unsplash.com/photo-1600857544200-b2f666a6f230') center/cover;
+    height: 70vh;
+}
+
+.product-card {
+    transition: transform 0.3s;
+    border: 2px solid var(--primary-green);
+    margin-bottom: 1rem;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.bitcoin-payment {
+    background: #f7931a;
+    color: white !important;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+.footer {
+    background: var(--primary-green);
+    color: white;
+    padding: 40px 0;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+    }
+    
+    .brand-logo {
+        font-size: 1.2rem;
+    }
+}
